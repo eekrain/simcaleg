@@ -1,5 +1,7 @@
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
 import { useAuth0, Auth0Provider } from "react-native-auth0";
+import { trpc } from "./utils/trpc";
+import { useEffect } from "react";
 
 const Home = () => {
   const { authorize, clearSession, user, error, getCredentials } = useAuth0();
@@ -26,6 +28,12 @@ const Home = () => {
       console.log("Log out cancelled");
     }
   };
+
+  const tes = trpc.test.getUser.useQuery("kontol");
+
+  useEffect(() => {
+    console.log("🚀 ~ file: Home.tsx:33 ~ Home ~ tes:", tes);
+  }, [tes.data]);
 
   return (
     <View style={styles.container}>
