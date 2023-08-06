@@ -11,7 +11,7 @@ export const TrpcProvider = ({ children }: PropsWithChildren) => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: `${process.env.EXPO_PUBLIC_API_URL}/trpc` || "",
+          url: process.env.EXPO_PUBLIC_API_URL || "",
           // You can pass any HTTP headers you wish here
           headers() {
             return {

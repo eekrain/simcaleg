@@ -21,7 +21,7 @@ devshell.mkShell {
     nodePackages.yarn
     nodePackages_latest.expo-cli
     openssl
-
+    mkcert
     # Android Development Stuff
     android-studio
     android-sdk
