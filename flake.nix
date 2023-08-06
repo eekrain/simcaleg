@@ -29,11 +29,11 @@
         };
 
         androidConfig = {
-          defaultBuildToolsVersion = "31.0.0";
+          defaultBuildToolsVersion = "33.0.0";
           sdkPkgs = android.sdk.${system} (sdkPkgs: with sdkPkgs; [
             # Useful packages for building and testing.
             # make sure to add defaultBuildToolsVersion
-            build-tools-31-0-0
+            build-tools-33-0-0
             # If when building the apps needs to add other version of build tools, u can add it too
             build-tools-30-0-3
             cmdline-tools-latest
@@ -44,10 +44,10 @@
 
             # Other useful packages for a development environment.
             sources-android-33
-            system-images-android-30-google-apis-x86
+            # system-images-android-30-google-apis-x86
             ndk-23-1-7779620
             cmake-3-22-1
-            # system-images-android-30-google-apis-playstore-x86
+            system-images-android-30-google-apis-playstore-x86
           ]);
         };
       in

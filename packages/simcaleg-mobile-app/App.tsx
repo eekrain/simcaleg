@@ -1,12 +1,19 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { useAuth0, Auth0Provider } from "react-native-auth0";
+import Home from "./src/Home";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Auth0Provider
+      domain={"simcaleg.au.auth0.com"}
+      clientId={"vR6PC0hhSKOW1vLFY5VJUwHUpEdQxpXM"}
+    >
+      <View style={styles.container}>
+        <StatusBar style="auto" />
+        <Home />
+      </View>
+    </Auth0Provider>
   );
 }
 
