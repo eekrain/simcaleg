@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.auth0samples"
@@ -34,6 +36,11 @@
           "customScheme": "auth0.com.auth0samples"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e648271b-bbe1-4bbb-9eeb-c6bf1e1476af"
+      }
+    }
   }
 }

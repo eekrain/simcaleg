@@ -20,6 +20,7 @@ devshell.mkShell {
     nodejs-slim
     nodePackages.yarn
     nodePackages_latest.expo-cli
+    nodePackages_latest.eas-cli
     openssl
     mkcert
     # Android Development Stuff
