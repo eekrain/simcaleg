@@ -9217,6 +9217,11 @@ react-native-auth0@^2.17.4:
     prop-types "^15.8.1"
     url "^0.11.0"
 
+react-native-document-scanner-plugin@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/react-native-document-scanner-plugin/-/react-native-document-scanner-plugin-0.9.0.tgz#bb5484a36cb59c011bd71a6778d58793ec2976c1"
+  integrity sha512-plONbjVoncCaEPqJL//4sKAzh/E+ScLjahxR02S9jFBh3IG4q+dUzq/juaCWC1rRxAWRTKga2KefUYQ1bIIHxA==
+
 react-native@0.72.3:
   version "0.72.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.72.3.tgz#f8d85ec81c9f3592d091ec8e9ac1694956a72765"

@@ -2,6 +2,7 @@ import { Alert, Button, StyleSheet, Text, View } from "react-native";
 import { useAuth0, Auth0Provider } from "react-native-auth0";
 import { trpc } from "./utils/trpc";
 import { useEffect } from "react";
+import Scan from "./Scan";
 
 const Home = () => {
   const { authorize, clearSession, user, error, getCredentials } = useAuth0();

@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.auth0samples"
@@ -34,6 +32,12 @@
         {
           "domain": "simcaleg.au.auth0.com",
           "customScheme": "auth0.com.auth0samples"
+        }
+      ],
+      [
+        "react-native-document-scanner-plugin",
+        {
+          "cameraPermission": "We need camera access, so you can scan documents"
         }
       ]
     ],
