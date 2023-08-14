@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DocumentScanner from "react-native-document-scanner-plugin";
-import { Image } from "react-native";
+import { Button, Image, SafeAreaView } from "react-native";
 
 export default function App() {
   const [scannedImage, setScannedImage] = useState<any>();
@@ -19,16 +19,23 @@ export default function App() {
     }
   };
 
-  useEffect(() => {
-    // call scanDocument on load
-    scanDocument();
-  }, []);
+  // useEffect(() => {
+  //   // call scanDocument on load
+  //   scanDocument();
+  // }, []);
 
   return (
-    <Image
-      resizeMode="contain"
-      style={{ width: "100%", height: "100%" }}
-      source={{ uri: scannedImage }}
-    />
+    <>
+      <SafeAreaView>
+        {scannedImage && (
+          <Image
+            resizeMode="contain"
+            style={{ width: "100%", height: "50%" }}
+            source={{ uri: scannedImage }}
+          />
+        )}
+        <Button title="Scan KTP" onPress={scanDocument} />
+      </SafeAreaView>
+    </>
   );
 }
