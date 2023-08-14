@@ -37,3 +37,7 @@ yarn-error.*
 
 #direnv
 .direnv
+
+# for EAS
+android/
+ios/
