@@ -41,3 +41,4 @@ yarn-error.*
 # for EAS
 android/
 ios/
+build-*
