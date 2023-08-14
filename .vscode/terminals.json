@@ -8,7 +8,7 @@
     },
     {
       "name": "Expo app",
-      "cwd": "./packages/simcaleg-expo-app"
+      "cwd": "./packages/simcaleg-mobile-app"
     },
     {
       "name": "Functions",
